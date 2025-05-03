@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Instagram,
   Linkedin,
@@ -23,6 +21,7 @@ export const ContactSection = () => {
     setIsSubmitting(true);
 
     const formData = new FormData(e.target);
+    
     formData.append("access_key", "b757aad7-d29e-4839-ae1f-0dd0664385a8");
 
     const object = Object.fromEntries(formData);
